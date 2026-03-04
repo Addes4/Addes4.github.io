@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section id="about" className="py-28 bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-auto">
           {/* Text */}
           <div>
             <span className="text-indigo-400 text-xs font-semibold tracking-[0.2em] uppercase">
@@ -19,15 +19,13 @@ export default function About() {
               Who I Am
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-4">
-              {/* TODO: Write your bio (first paragraph) */}
               I&apos;m an Engineering Mathematics student at KTH Royal
               Institute of Technology in Stockholm, Sweden. I&apos;m deeply interested in
               mathematics, problem solving, machine learning and finance. I&apos;m
-              active in multiple student associations and clubs.
+              an active member in multiple student associations and clubs.
             </p>
             <p className="text-neutral-400 leading-relaxed mb-10">
-              {/* TODO: Write your bio (second paragraph) */}
-              Outside of lectures and problem sets, I enjoy hiking, music, football, tennis
+              Outside of lectures and problem sets, I enjoy hiking, music, football, tennis,
               reading and mountaineering.
             </p>
 
