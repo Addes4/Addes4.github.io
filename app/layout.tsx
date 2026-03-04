@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'Adrian',
   },
 }
-w
+
 export default function RootLayout({
   children,
 }: {
