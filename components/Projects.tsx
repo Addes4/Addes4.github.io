@@ -14,8 +14,8 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-neutral-500 max-w-lg mx-auto text-sm leading-relaxed">
-            A selection of things I&apos;ve built — from mathematical tools to
-            web applications.
+            A selection of things I&apos;ve built, from things that've bugged me,
+            and sudden ideas that popped into my head, to mathematical tools.
           </p>
         </div>
 

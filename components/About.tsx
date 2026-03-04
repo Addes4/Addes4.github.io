@@ -2,7 +2,7 @@ const facts = [
   { label: 'University', value: 'KTH Royal Institute of Technology' },
   { label: 'Program', value: 'Engineering Mathematics' },
   { label: 'Location', value: 'Stockholm, Sweden' },
-  { label: 'Interests', value: 'Math, Software, Music' }, // TODO: customize
+  { label: 'Interests', value: 'Outdoor activities, Music, Reading' },  
 ]
 
 export default function About() {
