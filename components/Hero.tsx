@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pt-24 pb-20">
         <p className="text-indigo-400 text-xs font-semibold tracking-[0.25em] uppercase mb-5 animate-fade-in">
-          Welcome to my portfolio
+          My Portfolio
         </p>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-5 leading-[1.1] animate-slide-up">
@@ -35,13 +35,12 @@ export default function Hero() {
         </h1>
 
         <p className="text-base md:text-lg text-neutral-400 mb-3 animate-slide-up [animation-delay:100ms] opacity-0 [animation-fill-mode:forwards]">
-          Engineering Mathematics @ KTH Royal Institute of Technology
+          Engineering Mathematics at KTH Royal Institute of Technology
         </p>
 
         <p className="text-neutral-500 max-w-xl mx-auto mb-10 animate-slide-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
-          {/* TODO: Add your personal tagline */}
-          Passionate about mathematics, software engineering, and building
-          things that matter.
+          Passionate about mathematics, problem solving, 
+          machine learning and finance.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-14 animate-slide-up [animation-delay:300ms] opacity-0 [animation-fill-mode:forwards]">
@@ -63,7 +62,7 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-6 animate-fade-in [animation-delay:500ms] opacity-0 [animation-fill-mode:forwards]">
           <a
             href="https://github.com/Addes4"
-            target="_blank"
+            target="Addes4"
             rel="noopener noreferrer"
             aria-label="GitHub"
             className="text-neutral-500 hover:text-white transition-colors duration-200"
@@ -71,8 +70,8 @@ export default function Hero() {
             <Github size={20} />
           </a>
           <a
-            href="#" // TODO: Replace with your LinkedIn URL
-            target="_blank"
+            href="https://linkedin.com/in/adrian-sohrabi/"
+            target="Adrian Sohrabi"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="text-neutral-500 hover:text-white transition-colors duration-200"
@@ -80,7 +79,7 @@ export default function Hero() {
             <Linkedin size={20} />
           </a>
           <a
-            href="mailto:your@email.com" // TODO: Replace with your email
+            href="mailto:adrian.sohrabi02@gmail.com"
             aria-label="Email"
             className="text-neutral-500 hover:text-white transition-colors duration-200"
           >
