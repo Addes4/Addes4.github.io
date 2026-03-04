@@ -22,10 +22,10 @@ export const projects: Project[] = [
     github: 'https://github.com/Addes4/graph-comparison',
   },
   {
-    title: 'Pyramid Solitaire',
+    title: 'Productivity Planner',
     description:
-      'Another cool project. Keep descriptions concise but informative about your contributions.',
-    tech: ['C++', 'MATLAB'],
-    github: 'https://github.com/Addes4/third-project',
+      'Productivity Planner is a local-first web app I built to turn weekly goals into a realistic schedule. Users set priorities, session lengths, preferred times, and constraints (like sleep windows, travel buffers, and allowed weekdays), and the app auto-generates calendar blocks around existing commitments. It supports drag-and-drop rescheduling, recurring events with single-instance edits, .ics import, optional Google Calendar sync through an OAuth proxy, and weekly outcome reporting.',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    github: 'https://github.com/Addes4/productivity_planner',
   },
 ]
