@@ -13,14 +13,14 @@ const socials = [
     icon: Linkedin,
     label: 'LinkedIn',
     handle: 'Adrian Sohrabi', // TODO: Update handle
-    href: 'https://linkedin.com/in/your-profile', // TODO: Update URL
+    href: 'https://linkedin.com/in/adrian-sohrabi/',
     external: true,
   },
   {
     icon: Mail,
     label: 'Email',
-    handle: 'your@email.com', // TODO: Replace with your email
-    href: 'mailto:your@email.com',
+    handle: 'adrian.sohrabi02@gmail.com',
+    href: 'mailto:adrian.sohrabi02@gmail.com',
     external: false,
   },
 ]
