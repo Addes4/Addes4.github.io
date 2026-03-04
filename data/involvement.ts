@@ -8,20 +8,20 @@ export interface InvolvementEntry {
 
 export const involvement: InvolvementEntry[] = [
   {
-    date: '2024 – Present',
-    organization: 'Student Association Name', // TODO: Fill in
-    role: 'Role / Position Title',
+    date: 'April 2025 - Present',
+    organization: 'KTH AI Society', // TODO: Fill in
+    role: 'Business Development Associate',
     description:
-      'Describe what you did, what events you organized, what you accomplished, and the impact you made within this association.',
-    tags: ['Leadership', 'Event Planning'],
+      'Held and judged 4 major hackathons, multiple workshops and seminars, and other events. Companies that I have partnered with include::',
+    tags: ['Jane Street', 'Y-Combinator', 'McKinsey Quantumblack', 'HackEurope', 'Lovable', 'Open AI', 'Google'],
   },
   {
-    date: '2024',
-    organization: 'Another Student Organization', // TODO: Fill in
-    role: 'Member / Volunteer',
+    date: 'January 2026 - Present',
+    organization: 'F1RST at KTH',
+    role: 'Board Member and Head of Events',
     description:
-      'Describe the project, event, or initiative you were part of and your specific contributions.',
-    tags: ['Community', 'Tech'],
+      'Helping unprivledged students get access to the best resources and opportunities in the industry. Companies that I have partnered with include:',
+    tags: ['Spotify', 'Lovable', "Lynx Asset Management"],
   },
   {
     date: '2023',

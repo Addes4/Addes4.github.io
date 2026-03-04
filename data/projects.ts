@@ -31,7 +31,7 @@ export const projects: Project[] = [
   {
     title: 'Clinical Food Log',
     description:
-      'A privacy-first full-stack web app I built to help IBS/IBD patients and clinicians track patterns between food, symptoms, and daily context. It supports role-based workflows (patient, clinician, admin) with strict access controls and data isolation, plus structured logging for meals, symptoms, hydration, medication adherence, and reminders. I implemented bilingual (Swedish/English) food normalization with confidence scoring and typo-tolerant matching, then added clinician-facing analytics for trend summaries and possible food-symptom associations (explicitly correlation, not causation). The platform also includes shared care plans, goal tracking with smart nudges, and de-identified research export tooling.',
+      'A privacy-first full-stack web app I built to help patients and clinicians track patterns between food, symptoms, and daily context. It supports role-based workflows (patient, clinician, admin) with strict access controls and data isolation, plus structured logging for meals, symptoms, hydration, medication adherence, and reminders. I implemented bilingual (Swedish/English) food normalization with confidence scoring and typo-tolerant matching, then added clinician-facing analytics for trend summaries and possible food-symptom associations (explicitly correlation, not causation). The platform also includes shared care plans, goal tracking with smart nudges, and de-identified research export tooling.',
     tech: ['Next.js 14', 'TypeScript', 'Prisma', 'NextAuth v4'],
     github: 'https://github.com/Addes4/clinical-food-log',
   },
