@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: 'Graph Comparison',
     description:
-      'I built a Python benchmarking project that compares two core graph representations, adjacency matrix and adjacency list, in terms of runtime, memory usage, and estimated CO2 emissions. The project generates random undirected graphs at multiple scales (100-1000 nodes) and densities (sparse to dense), then benchmarks key operations (has_edge, get_neighbors, and BFS). I used time.perf_counter for execution timing, tracemalloc for peak memory tracking, and codecarbon (offline mode) for emissions estimates. This project demonstrates practical trade-offs between algorithmic complexity and real-world resource usage in data structure design..',
+      'I built a Python benchmarking project that compares adjacency matrix and adjacency list graph representations by measuring runtime, memory usage, and estimated CO2 emissions. The script generates random undirected graphs with different sizes and densities, then benchmarks core operations like has_edge, get_neighbors, and BFS traversal. It highlights the practical trade-offs between theoretical complexity and real resource usage when choosing data structures.',
     tech: ['Python', 'CodeCarbon', 'tracemalloc'],
     github: 'https://github.com/Addes4/graph-comparison',
   },
