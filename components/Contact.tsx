@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 
-// TODO: Fill in your real LinkedIn URL and email
 const socials = [
   {
     icon: Github,
@@ -12,7 +11,7 @@ const socials = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    handle: 'Adrian Sohrabi', // TODO: Update handle
+    handle: 'Adrian Sohrabi',
     href: 'https://linkedin.com/in/adrian-sohrabi/',
     external: true,
   },

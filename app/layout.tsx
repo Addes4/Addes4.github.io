@@ -10,13 +10,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Adrian Sohrabi',
   description:
-    'Engineering Mathematics student at KTH Royal Institute of Technology — building at the intersection of math and software.',
+    'Engineering Mathematics student at KTH Royal Institute of Technology',
   openGraph: {
     title: 'Adrian Sohrabi',
     description:
       'Engineering Mathematics student at KTH Royal Institute of Technology.',
-    url: 'https://addes4.github.io',
-    siteName: 'Adrian Sohrabi',
+    url: 'https://Addes4.github.io',
+    siteName: 'Adrian',
   },
 }
 
