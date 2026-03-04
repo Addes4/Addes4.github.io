@@ -64,7 +64,7 @@ export const involvement: InvolvementEntry[] = [
     organization: 'KTH AI Society',
     role: 'Business Development Associate',
     description:
-      'Held and judged 4 major hackathons, multiple workshops and seminars, and other events. Companies that I have partnered with include::',
+      'Held and judged 4 major hackathons, multiple workshops and seminars, and other events. Companies that I have partnered with include:',
     tags: ['Jane Street', 'Y-Combinator', 'McKinsey Quantumblack', 'Susquehanna International Group', 'HackEurope', 'Lovable', 'Open AI', 'Google', 'Microsoft', 'Stripe', 'Listen Labs', 'Legora'],
   },
   {
