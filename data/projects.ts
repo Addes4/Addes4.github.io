@@ -12,7 +12,7 @@ export const projects: Project[] = [
     description:
       'Built a Python-based orbital mechanics simulation project that models planetary motion with Newtonian gravity, compares forward Euler vs. symplectic Euler integration, and visualizes long-term orbit stability. The project progresses from a fixed-Sun orbit model to a moving two-bodysystem, then to a Sun–Earth–Jupiter gravitational slingshot scenario where a spacecraft gains enough energy to escape, with energy/convergence analysis and matplotlib plots throughout.',
     tech: ['Python', 'Math', 'Matplotlib'],
-    github: 'https://github.com/Addes4/orbital-simulation',
+    github: 'https://github.com/Addes4/orbital_simulation',
   },
   {
     title: 'Graph Comparison',
