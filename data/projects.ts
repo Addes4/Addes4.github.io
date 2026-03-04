@@ -28,4 +28,18 @@ export const projects: Project[] = [
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
     github: 'https://github.com/Addes4/productivity_planner',
   },
+  {
+    title: 'Clinical Food Log',
+    description:
+      'A privacy-first full-stack web app I built to help IBS/IBD patients and clinicians track patterns between food, symptoms, and daily context. It supports role-based workflows (patient, clinician, admin) with strict access controls and data isolation, plus structured logging for meals, symptoms, hydration, medication adherence, and reminders. I implemented bilingual (Swedish/English) food normalization with confidence scoring and typo-tolerant matching, then added clinician-facing analytics for trend summaries and possible food-symptom associations (explicitly correlation, not causation). The platform also includes shared care plans, goal tracking with smart nudges, and de-identified research export tooling.',
+    tech: ['Next.js 14', 'TypeScript', 'Prisma', 'NextAuth v4'],
+    github: 'https://github.com/Addes4/clinical-food-log',
+  },
+  {
+    title: 'Workflow Orchestrator',
+    description:
+      'A lead operations workspace designed for outreach teams that need speed without losing human control. It centralizes lead ownership, stage tracking, internal notes, and inbound/outbound email history so handoffs stay clean and the full relationship context is always visible. The product is intentionally human-in-the-loop: instead of sending emails automatically, it generates AI-assisted draft suggestions for the next message and keeps final decisions with the team. I also structured it with an extensible, feature-gated automation foundation for future workflow execution use cases. The result is a practical decision-support tool that improves pipeline clarity, collaboration, and follow-up quality.',
+    tech: ['React', 'Node.js/Express', 'SQLite', 'Tailwind CSS'],
+    github: 'https://github.com/Addes4/Workflow-orchestrator',
+  },
 ]
