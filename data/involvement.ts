@@ -46,15 +46,9 @@ export const events: EventEntry[] = [
   },
   {
     date: 'November 2025',
-    name: 'KTH AIS x Open AI x Stripe Hackathon',
+    name: 'KTH AIS x Open AI x Stripe Fintech Hackathon',
     organization: 'KTH AI Society',
-    description: 'A 24-hour hackathon with 60+ participants. We partnered with Open AI, Stripe and Founders House to host the hackathon.',
-  },
-  {
-    date: 'October 2025',
-    name: 'KTH AIS x ',
-    organization: 'KTH AI Society',
-    description: 'A workshop with 60+ participants. We partnered with Jane Street, the largest investment bank in the world, to hear more about AI in finance.',
+    description: 'A 24-hour fintech hackathon with 60+ participants. We partnered with Open AI, Stripe and Founders House to host the hackathon.',
   },
   {
     date: 'April 2025',

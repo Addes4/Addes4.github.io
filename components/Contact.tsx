@@ -36,8 +36,7 @@ export default function Contact() {
             Get in Touch
           </h2>
           <p className="text-neutral-500 max-w-md mx-auto text-sm leading-relaxed">
-            I&apos;m always open to new opportunities, collaborations, or just a
-            good conversation. Don&apos;t hesitate to reach out.
+            I&apos;m always open to new opportunities or collaborations. Don&apos;t hesitate to reach out.
           </p>
         </div>
 
