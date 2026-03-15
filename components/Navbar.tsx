@@ -25,34 +25,39 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-black/80 backdrop-blur-md border-b border-white/5'
+          ? 'border-b border-[color:var(--line)] bg-[rgba(244,239,230,0.82)] backdrop-blur-xl'
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" aria-label="Home">
-          <span className="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white font-bold text-sm select-none">
+      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-6">
+        <a href="#" aria-label="Home" className="flex min-w-0 items-center gap-3">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white text-sm font-semibold text-[color:var(--accent)]">
             AS
+          </span>
+          <span className="min-w-0">
+            <span className="block truncate text-[1.1rem] font-semibold leading-none text-[color:var(--foreground)]">
+              Adrian Sohrabi
+            </span>
+            <span className="hidden text-[10px] font-semibold uppercase tracking-[0.3em] text-[color:var(--muted)] sm:block">
+              Engineering Mathematics
+            </span>
           </span>
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-neutral-400 hover:text-white transition-colors duration-200"
+              className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)] hover:text-[color:var(--foreground)]"
             >
               {link.label}
             </a>
           ))}
         </div>
 
-        {/* Mobile hamburger */}
         <button
-          className="md:hidden text-neutral-400 hover:text-white transition-colors"
+          className="flex h-11 w-11 items-center justify-center rounded-xl border border-[color:var(--line)] bg-white text-[color:var(--foreground)] md:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -60,19 +65,20 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-black/95 backdrop-blur-md border-b border-white/5 px-6 py-5 flex flex-col gap-5">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-neutral-400 hover:text-white transition-colors"
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
+        <div className="px-6 pb-5 md:hidden">
+          <div className="paper-card paper-card-strong flex flex-col gap-5 px-6 py-6">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)] hover:text-[color:var(--foreground)]"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </header>

@@ -1,101 +1,104 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 
+const highlights = [
+  {
+    label: 'Education',
+    value: 'Engineering Mathematics at KTH Royal Institute of Technology.',
+  },
+  {
+    label: 'Focus Areas',
+    value: 'Problem solving, mathematical modeling, machine learning, quantitative methods for finance and software development.',
+  },
+  {
+    label: 'Current Work',
+    value: 'Coursework, student organizations, events, and personal projects.',
+  },
+]
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
-      {/* Background: dot grid */}
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{
-          backgroundImage:
-            'radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)',
-          backgroundSize: '28px 28px',
-        }}
-      />
+    <section className="relative overflow-hidden px-0 pb-24 pt-32 md:pb-28 md:pt-40">
+      <div className="section-inner">
+        <div className="grid gap-12 lg:grid-cols-[1.3fr_0.9fr] lg:items-start">
+          <div className="max-w-3xl">
+            <p className="section-kicker mb-6 animate-fade-in">Stockholm, Sweden</p>
+            <h1 className="section-title hero-title animate-slide-up">
+              Engineering Mathematics student interested in problem solving and mathematical applications.
+            </h1>
 
-      {/* Radial glow */}
-      <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] opacity-25 blur-3xl pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse at center, #6366f1 0%, transparent 65%)',
-        }}
-      />
+            <div className="mt-10 flex flex-wrap gap-4 animate-slide-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+              <a href="#projects" className="primary-button">
+                View Projects
+              </a>
+              <a href="#contact" className="secondary-button">
+                Get in Touch
+              </a>
+            </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6 pt-24 pb-20">
-        <p className="text-indigo-400 text-xs font-semibold tracking-[0.25em] uppercase mb-5 animate-fade-in">
-          My Portfolio
-        </p>
+            <div className="mt-10 flex flex-wrap gap-3 animate-fade-in [animation-delay:350ms] opacity-0 [animation-fill-mode:forwards]">
+              <a
+                href="https://github.com/Addes4"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="social-pill"
+              >
+                <Github size={16} />
+                GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/adrian-sohrabi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="social-pill"
+              >
+                <Linkedin size={16} />
+                LinkedIn
+              </a>
+              <a
+                href="mailto:asohrabi@kth.se"
+                aria-label="Email"
+                className="social-pill"
+              >
+                <Mail size={16} />
+                Email
+              </a>
+            </div>
+          </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-5 leading-[1.1] animate-slide-up">
-          <span className="bg-gradient-to-br from-white via-neutral-200 to-indigo-300 bg-clip-text text-transparent">
-            Adrian Sohrabi
-          </span>
-        </h1>
-
-        <p className="text-base md:text-lg text-neutral-400 mb-3 animate-slide-up [animation-delay:100ms] opacity-0 [animation-fill-mode:forwards]">
-          Engineering Mathematics at KTH Royal Institute of Technology
-        </p>
-
-        <p className="text-neutral-500 max-w-xl mx-auto mb-10 animate-slide-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
-          Passionate about mathematics, problem solving, 
-          machine learning and finance.
-        </p>
-
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-14 animate-slide-up [animation-delay:300ms] opacity-0 [animation-fill-mode:forwards]">
-          <a
-            href="#projects"
-            className="px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/30"
-          >
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 rounded-full border border-white/10 hover:border-white/25 text-neutral-300 hover:text-white text-sm font-medium transition-all duration-200"
-          >
-            Get in Touch
-          </a>
+          <div>
+            <div className="paper-card paper-card-strong p-7 md:p-8">
+              <p className="section-kicker mb-6">Overview</p>
+              <div className="space-y-6">
+                {highlights.map((item, index) => (
+                  <div
+                    key={item.label}
+                    className={
+                      index > 0 ? 'border-t border-[color:var(--line)] pt-6' : ''
+                    }
+                  >
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">
+                      {item.label}
+                    </p>
+                    <p className="mt-2 text-base leading-7 text-[color:var(--foreground)]">
+                      {item.value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Social links */}
-        <div className="flex items-center justify-center gap-6 animate-fade-in [animation-delay:500ms] opacity-0 [animation-fill-mode:forwards]">
-          <a
-            href="https://github.com/Addes4"
-            target="Addes4"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="text-neutral-500 hover:text-white transition-colors duration-200"
-          >
-            <Github size={20} />
-          </a>
-          <a
-            href="https://linkedin.com/in/adrian-sohrabi/"
-            target="Adrian Sohrabi"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="text-neutral-500 hover:text-white transition-colors duration-200"
-          >
-            <Linkedin size={20} />
-          </a>
-          <a
-            href="mailto:adrian.sohrabi02@gmail.com"
-            aria-label="Email"
-            className="text-neutral-500 hover:text-white transition-colors duration-200"
-          >
-            <Mail size={20} />
-          </a>
-        </div>
+        <a
+          href="#about"
+          className="link-inline mt-16 inline-flex text-sm animate-fade-in [animation-delay:450ms] opacity-0 [animation-fill-mode:forwards]"
+        >
+          Learn more
+          <ArrowDown size={16} />
+        </a>
       </div>
-
-      {/* Scroll indicator */}
-      <a
-        href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-600 hover:text-neutral-400 transition-colors animate-bounce"
-        aria-label="Scroll to About"
-      >
-        <ArrowDown size={18} />
-      </a>
     </section>
   )
 }

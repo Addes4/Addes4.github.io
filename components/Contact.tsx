@@ -18,47 +18,51 @@ const socials = [
   {
     icon: Mail,
     label: 'Email',
-    handle: 'adrian.sohrabi02@gmail.com',
-    href: 'mailto:adrian.sohrabi02@gmail.com',
+    handle: 'asohrabi@kth.se',
+    href: 'mailto:asohrabi@kth.se',
     external: false,
   },
 ]
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-28 bg-[#0a0a0a]">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="text-indigo-400 text-xs font-semibold tracking-[0.2em] uppercase">
-            Let&apos;s Talk
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
-            Get in Touch
-          </h2>
-          <p className="text-neutral-500 max-w-md mx-auto text-sm leading-relaxed">
-            I&apos;m always open to new opportunities or collaborations. Don&apos;t hesitate to reach out.
-          </p>
-        </div>
+    <section id="contact" className="section-shell">
+      <div className="section-inner">
+        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div className="paper-card paper-card-strong p-8 md:p-10">
+            <span className="section-kicker">Contact</span>
+            <h2 className="section-title mt-4">Contact</h2>
+            <p className="section-copy mt-5">
+              I&apos;m open to internships, full-time opportunities, and relevant
+              collaborations.
+            </p>
+            <p className="mt-8 text-sm leading-7 text-[color:var(--muted)]">
+              Email is usually the fastest way to reach me. LinkedIn and GitHub
+              are also available below.
+            </p>
+          </div>
 
-        {/* Social cards */}
-        <div className="grid sm:grid-cols-3 gap-5 max-w-2xl mx-auto">
-          {socials.map(({ icon: Icon, label, handle, href, external }) => (
-            <a
-              key={label}
-              href={href}
-              target={external ? '_blank' : undefined}
-              rel={external ? 'noopener noreferrer' : undefined}
-              className="group flex flex-col items-center gap-4 p-8 bg-[#111] rounded-2xl border border-white/5 hover:border-indigo-500/30 transition-all duration-200 hover:-translate-y-1"
-            >
-              <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center group-hover:bg-indigo-500/20 transition-colors duration-200">
-                <Icon size={20} className="text-indigo-400" />
-              </div>
-              <div className="text-center">
-                <p className="text-sm font-semibold text-white">{label}</p>
-                <p className="text-xs text-neutral-500 mt-0.5">{handle}</p>
-              </div>
-            </a>
-          ))}
+          <div className="grid gap-4 sm:grid-cols-3">
+            {socials.map(({ icon: Icon, label, handle, href, external }) => (
+              <a
+                key={label}
+                href={href}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noopener noreferrer' : undefined}
+                className="contact-card flex flex-col justify-between gap-8 bg-white"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[color:var(--line)] bg-white/60 text-[color:var(--accent)]">
+                  <Icon size={20} />
+                </div>
+                <div>
+                  <p className="text-[1.25rem] font-semibold leading-tight text-[color:var(--foreground)]">
+                    {label}
+                  </p>
+                  <p className="mt-2 text-sm text-[color:var(--muted)]">{handle}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
