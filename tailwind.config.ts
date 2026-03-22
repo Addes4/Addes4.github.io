@@ -7,26 +7,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ['var(--font-sans-stack)'],
-        display: ['var(--font-display-stack)'],
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.8s ease forwards',
-        'slide-up': 'slideUp 0.7s ease forwards',
-      },
-      keyframes: {
-        fadeIn: {
-          from: { opacity: '0' },
-          to: { opacity: '1' },
-        },
-        slideUp: {
-          from: { opacity: '0', transform: 'translateY(24px)' },
-          to: { opacity: '1', transform: 'translateY(0)' },
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
