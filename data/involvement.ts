@@ -13,59 +13,14 @@ export interface EventEntry {
   description: string
 }
 
-export const events: EventEntry[] = [
-  {
-    date: 'February 2026',
-    name: 'Hackeurope 2026',
-    organization: 'KTH AI Society',
-    description: 'Was a judge and organizer for a 24-hour hackathon with 300+ participants. We partnered with HackEurope, Susquehanna International Group and Founders House to host the hackathon.',
-  },
-  {
-    date: 'February 2026',
-    name: 'KTH AIS x Jane Street Partnership',
-    organization: 'KTH AI Society',
-    description: 'I initiated a partnership with Jane Street to get our students access to the best resources and opportunities in the industry. We are now hosting a series of events with Jane Street.',
-  },
-  {
-    date: 'February 2026',
-    name: 'KTH AIS x Lovable x Florent Venture Partners x Google x Microsoft x Listen Labs x Qualia x Specific AI Hackathon',
-    organization: 'KTH AI Society',
-    description: 'A 24-hour hackathon with 50+ participants. The goal was to build a multi-agent system that could help with a variety of tasks.',
-  },
-  {
-    date: 'January 2026',
-    name: 'KTH AIS x Y-Combinator Panel Discussion and Coffee Chats',
-    organization: 'KTH AI Society',
-    description: 'A panel discussion and coffee chats with Y-Combinator and Vesence. Our students had the opportunity to pitch their ideas to Y-Combinator and get feedback from 2 YC partners.',
-  },
-  {
-    date: 'December 2025',
-    name: 'KTH AIS x Mannheimer Swartling Workshop',
-    organization: 'KTH AI Society',
-    description: 'A workshop with 60+ participants. We partnered with Mannheimer Swartling, the nordics biggest law firm,  to hear more about AI legislation and regulations.',
-  },
-  {
-    date: 'November 2025',
-    name: 'KTH AIS x Open AI x Stripe Fintech Hackathon',
-    organization: 'KTH AI Society',
-    description: 'A 24-hour fintech hackathon with 60+ participants. We partnered with Open AI, Stripe and Founders House to host the hackathon.',
-  },
-  {
-    date: 'April 2025',
-    name: 'KTH AIS x Microsoft x SSE Business Lab Hackathon',
-    organization: 'KTH AI Society',
-    description: 'A 2 week long hackathon with 50+ participants. We partnered with Microsoft and SSE Business Lab to host the hackathon.',
-  },
-]
-
 export const involvement: InvolvementEntry[] = [
   {
     date: 'April 2025 - Present',
     organization: 'KTH AI Society',
     role: 'Board Member and Head of Business Development',
     description:
-      ' Responsible for partnerships and organizational strategy. Held and judged 4 major hackathons, multiple workshops and seminars, and other events. Companies that I have partnered with include:',
-    tags: ['Jane Street', 'Y-Combinator', 'McKinsey Quantumblack', 'Susquehanna International Group', 'HackEurope', 'Lovable', 'Open AI', 'Google', 'Microsoft', 'Stripe', 'Listen Labs', 'Legora'],
+      'Responsible for partnerships, data analytics and organizational strategy. Held and judged multiple major hackathons, countless of workshops and seminars, and other events. Companies that I have partnered with include:',
+    tags: ['Jane Street', 'Y-Combinator', 'McKinsey QuantumBlack', 'Susquehanna International Group', 'HackEurope', 'Lovable', 'Open AI', 'Google', 'Microsoft', 'Stripe', 'Listen Labs', 'Legora'],
   },
   {
     date: 'January 2026 - Present',
@@ -73,6 +28,14 @@ export const involvement: InvolvementEntry[] = [
     role: 'Board Member and Head of Events',
     description:
       'Helping unprivledged students get access to the best resources and opportunities in the industry. Companies that I have partnered with include:',
+    tags: ['Spotify', 'Lovable', "Lynx Asset Management"],
+  },
+  {
+    date: 'February 2021',
+    organization: 'Tullinge Gymnasium',
+    role: 'Teaching Assistant in Mathematics',
+    description:
+      'Worked as a teaching assistant in my first year of upper secondary school where i taught mathematics to peers.',
     tags: ['Spotify', 'Lovable', "Lynx Asset Management"],
   },
 ]

@@ -14,9 +14,9 @@ export default function Home() {
       <main className="relative overflow-hidden">
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Involvement />
-        <Experience />
         <Contact />
       </main>
       <Footer />

@@ -27,13 +27,9 @@ const socials = [
 export default function Contact() {
   return (
     <section id="contact" className="section-shell">
-      <div className="section-inner">
-        <h2 className="section-title mb-4">Contact</h2>
-        <p className="section-copy mb-10 max-w-xl">
-          I&apos;m open to internships, full-time opportunities, and relevant collaborations. Email is usually the fastest way to reach me.
-        </p>
-
-        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+      <div className="section-inner flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <h2 className="section-title">Contact</h2>
+        <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap md:justify-end">
           {socials.map(({ icon: Icon, label, handle, href, external }) => (
             <a
               key={label}

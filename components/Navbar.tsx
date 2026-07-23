@@ -5,9 +5,9 @@ import { Menu, X } from 'lucide-react'
 
 const links = [
   { label: 'About', href: '#about' },
+  { label: 'Professional Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Involvement', href: '#involvement' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'Leadership and Extra Curriculars', href: '#involvement' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -21,12 +21,12 @@ export default function Navbar() {
           Adrian Sohrabi
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-5 xl:gap-8">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-[color:var(--muted)] hover:text-[color:var(--foreground)]"
+              className="whitespace-nowrap text-sm text-[color:var(--muted)] hover:text-[color:var(--foreground)]"
             >
               {link.label}
             </a>
@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-[color:var(--foreground)]"
+          className="lg:hidden text-[color:var(--foreground)]"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -43,7 +43,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-[color:var(--line)] px-6 py-4 md:hidden flex flex-col gap-4">
+        <div className="border-t border-[color:var(--line)] px-6 py-4 lg:hidden flex flex-col gap-4">
           {links.map((link) => (
             <a
               key={link.href}
