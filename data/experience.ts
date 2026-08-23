@@ -15,7 +15,7 @@ export const experience: ExperienceEntry[] = [
     tags: ['Data Science', 'Machine Learning', 'Computational Biology','Mathematical Modelling', 'Linux'],
   },
   {
-    date: 'June 2026 - Present',
+    date: 'June 2026 - August 2026',
     company: 'P Capital Partners',
     role: 'Intern',
     description: 'Helping the team implement AI strategies, automate workflows and prototype fullstack AI agent tools. High exposure to the finance industry and how to navigate technical initiatives within it.',
