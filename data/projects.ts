@@ -8,11 +8,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Single-cell RNA sequence classification',
+    title: 'ASTRID',
     description:
       'My research at Karolinska Institutet. More info TBA.',
     tech: ['Python', 'R', 'Cancer Research','Computational Biology', 'Jupyter Notebook'],
     github: 'https://github.com/Addes4/astrid',
+  },
+    {
+    title: 'MOSA',
+    description:
+      'At the AI x Science Hackathon in London (Oct 2026), our team built a self-checking AI research framework where LLMs design algorithms, with each run sandboxed on Modal. It produced a bin-packing rule that beats published AI-designed rules, including Google DeepMind’s FunSearch algorithm. Extended it into MOSA, which tests LLM-designed strategies in parallel on ~500 Modal cores. It found 5 new best-known square packings (n=88, 123, 126, 129, 130), a benchmark studied since 1979. 1,000+ applications, 200+ participants. Sponsors include Modal, Hugging Face, Anthropic, Google DeepMind and Cognition.',
+    tech: ['Autoresearch', 'Claude Code', 'Codex', 'Hugging Face', 'Modal'],
+    github: 'https://github.com/swedishScienceMafia/swedishScienceMafia',
   },
   {
     title: 'Simulation of orbital mechanics',
@@ -27,12 +34,5 @@ export const projects: Project[] = [
       'I built a MATLAB signal-processing project that simulates an ECG-like waveform, adds Gaussian noise and 50 Hz power-line interference, and uses the Fast Fourier Transform to detect both the heart-rate peak and the disturbance frequency. The script estimates BPM from the spectrum, removes the narrow-band interference directly in the frequency domain, reconstructs the cleaned signal with an inverse FFT, and exports plots comparing the raw, spectral, and filtered results.',
     tech: ['MATLAB', 'Signal Processing', 'FFT'],
     github: 'https://github.com/Addes4/Fast_Fourier_Transform',
-  },
-  {
-    title: 'Graph Comparison',
-    description:
-      'I built a Python benchmarking project that compares adjacency matrix and adjacency list graph representations by measuring runtime, memory usage, and estimated CO2 emissions. The script generates random undirected graphs with different sizes and densities, then benchmarks core operations like has_edge, get_neighbors, and BFS traversal. It highlights the practical trade-offs between theoretical complexity and real resource usage when choosing data structures.',
-    tech: ['Python', 'CodeCarbon', 'tracemalloc'],
-    github: 'https://github.com/Addes4/graph-comparison',
   },
 ]
