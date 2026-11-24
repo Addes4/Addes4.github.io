@@ -50,7 +50,7 @@ export default function Home() {
             note={
               <>
                 The project, ASTRID, is still in progress. Code at{' '}
-                <a href="https://github.com/Addes4/astrid">github.com/Addes4/astrid</a>.
+                <a href="https://github.com/jhausserlab/astrid">github.com/jhausserlab/astrid</a>.
               </>
             }
           >
