@@ -1,38 +1,47 @@
-export interface ExperienceEntry {
+export interface Entry {
   date: string
-  company: string
-  role: string
+  organization: string
   description: string
-  tags?: string[]
+  /** Optional margin note, shown beside the entry and numbered automatically. */
+  note?: string
 }
 
-export const experience: ExperienceEntry[] = [
+export const experience: Entry[] = [
   {
-    date: 'July 2026 - Present',
-    company: 'Karolinska Institutet',
-    role: 'Visiting Student Researcher',
-    description: 'Undergradute research internship in Quantitative Tumor Immune Control at Jean Hausser Lab, department of cellular and molecular biology. Basically researching quantitative principles in tumour biology. Read more about my work under the "projects" section.',
-    tags: ['Data Science', 'Machine Learning', 'Computational Biology','Mathematical Modelling', 'Linux'],
+    date: '2026',
+    organization: 'P Capital Partners',
+    description: 'Summer intern. Prototyped AI strategies and full-stack AI agent tools.',
   },
   {
-    date: 'June 2026 - August 2026',
-    company: 'P Capital Partners',
-    role: 'Summer Intern',
-    description: 'Helping the team prototype AI strategies and fullstack AI agent tools. High exposure to the finance industry and how to navigate technical initiatives within it.',
-    tags: ['Agentic Engineering', 'AI Tools', 'Finance', 'Excel', 'Powerpoint'],
+    date: '2025',
+    organization: 'Silex Microsystems',
+    description: 'Summer intern in process operations: semiconductor fabrication and optical physics.',
   },
   {
-    date: 'June 2025 - August 2025',
-    company: 'Silex Microsystems',
-    role: 'Summer Intern',
-    description: 'Worked as a summer intern in process operations for Silex Microsystems. Semiconductor manufacturing and optical physics were the main topics of the internship.',
-    tags: ['Production', 'Optical physics', 'Semiconductor Fabrication', 'Excel'],
+    date: '2022–2025',
+    organization: 'Apoteket',
+    description: 'Pharmaceutical advisor.',
+  },
+]
+
+export const service: Entry[] = [
+  {
+    date: '2025–',
+    organization: 'KTH AI Society',
+    description:
+      'Board member and head of business development: partnerships, data analytics and strategy. Organised and judged hackathons, workshops and seminars.',
+    note: 'Partners include Jane Street, Y Combinator, OpenAI, Google, Microsoft, Stripe, SIG and McKinsey QuantumBlack.',
   },
   {
-    date: 'July 2022 - May 2025',
-    company: 'Apoteket AB',
-    role: 'Pharmaceutical Advisor',
-    description: 'Worked as a pharmaceutical advisor at Apoteket AB. I helped customers with their health and wellbeing by providing them with information about their medications and health conditions.',
-    tags: ['Customer service', 'Sales', 'Medicine'],
+    date: '2026–',
+    organization: 'F1RST at KTH',
+    description:
+      'Board member and head of events, helping students from less privileged backgrounds reach industry.',
+    note: 'Partners include Spotify, Lovable and Lynx Asset Management.',
+  },
+  {
+    date: '2021',
+    organization: 'Tullinge Gymnasium',
+    description: 'Teaching assistant in mathematics.',
   },
 ]
